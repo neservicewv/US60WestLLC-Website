@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | U.S. 60 West Storage LLC</title>
+  <meta name="description" content="Website Terms and Conditions for U.S. 60 West Storage LLC, Ashland, KY." />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #c9a227;
+      --gold-light: #e8c04a;
+      --gold-dark:  #a07b10;
+      --black:      #0a0a0a;
+      --charcoal:   #151515;
+      --dark:       #1c1c1c;
+      --dark2:      #222222;
+      --white:      #f5f5f5;
+      --text-muted: #b0b0b0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--charcoal);
+      color: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 2px solid var(--gold);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-logo {
+      height: 60px;
+      width: auto;
+    }
+
+    .header-brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-brand-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .header-back {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .header-back a {
+      color: var(--gold);
+    }
+
+    /* ── PAGE CONTENT ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--gold-dark);
+    }
+
+    .doc-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .doc-company {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .doc-effective {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .doc-effective strong {
+      color: var(--gold-light);
+    }
+
+    .doc-intro {
+      background: var(--dark);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 0.97rem;
+      color: var(--white);
+    }
+
+    .doc-intro p + p {
+      margin-top: 12px;
+    }
+
+    .doc-intro .disclaimer {
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    /* ── SECTIONS ── */
+    .doc-section {
+      margin-bottom: 40px;
+    }
+
+    .doc-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--dark2);
+    }
+
+    .doc-section p {
+      margin-bottom: 12px;
+      color: var(--white);
+      font-size: 0.97rem;
+    }
+
+    .doc-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 14px 0;
+    }
+
+    .doc-section ul li {
+      padding: 5px 0 5px 22px;
+      position: relative;
+      font-size: 0.95rem;
+      color: #d8d8d8;
+    }
+
+    .doc-section ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.8rem;
+      top: 7px;
+    }
+
+    /* Two-column list for short items */
+    .doc-section ul.two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--dark);
+      border: 1px solid var(--gold-dark);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px !important;
+      font-size: 0.97rem;
+    }
+
+    .contact-box strong {
+      color: var(--gold);
+    }
+
+    /* ── ACKNOWLEDGMENT ── */
+    .acknowledgment {
+      background: var(--dark2);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 48px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 2px solid var(--gold);
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .footer-bottom-strip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .ne-credit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      transition: color 0.2s;
+    }
+
+    .ne-credit:hover { color: var(--gold); text-decoration: none; }
+
+    .ne-logo { height: 36px; width: auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 36px 20px 60px; }
+      header { padding: 14px 20px; }
+      .doc-section ul.two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html">
+    <img src="Images/Header_files/Logo Basic Transparent.png" alt="U.S. 60 West Storage LLC logo" class="header-logo" />
+  </a>
+  <div class="header-brand">
+    <span class="header-brand-name">U.S. 60 West Storage LLC</span>
+    <span class="header-back"><a href="index.html">← Back to Home</a></span>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="page-wrap">
+
+  <div class="doc-header">
+    <div class="doc-title">Website Terms &amp; Conditions</div>
+    <div class="doc-company">US 60 West Storage LLC</div>
+    <div class="doc-effective">Effective Date: <strong>August 2, 2026</strong></div>
+  </div>
+
+  <div class="doc-intro">
+    <p>Welcome to the official website of US 60 West Storage LLC. These Website Terms &amp; Conditions govern your use of this website and any online services offered through it. By accessing or using this website, submitting information, making payments, requesting a reservation, or communicating with us electronically, you agree to be bound by these Terms &amp; Conditions.</p>
+    <p class="disclaimer">If you do not agree with these Terms, please discontinue use of this website.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="doc-section">
+    <h2>1. Website Purpose</h2>
+    <p>This website is intended to provide information regarding:</p>
+    <ul class="two-col">
+      <li>Self-storage unit availability</li>
+      <li>Unit sizes and pricing</li>
+      <li>Online payments</li>
+      <li>Rental inquiries</li>
+      <li>Customer account services</li>
+      <li>Facility information</li>
+      <li>Promotions and special offers</li>
+      <li>Business contact information</li>
+    </ul>
+    <p>The information provided on this website is for general informational purposes only and may be updated, modified, or removed at any time without prior notice.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="doc-section">
+    <h2>2. No Rental Agreement Created</h2>
+    <p>Use of this website, submission of a contact form, payment, or reservation request does not create a landlord-tenant relationship or a storage rental agreement.</p>
+    <p>A storage rental is not considered effective until:</p>
+    <ul>
+      <li>A storage unit has been assigned;</li>
+      <li>All required documentation has been completed;</li>
+      <li>Identity has been verified;</li>
+      <li>Required fees have been paid; and</li>
+      <li>The official Self-Storage Rental Agreement has been signed.</li>
+    </ul>
+    <p>The signed Rental Agreement shall govern all rental relationships and supersede any conflicting information contained on this website.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="doc-section">
+    <h2>3. Unit Availability</h2>
+    <p>Storage unit availability displayed on this website is subject to change without notice. Although we strive to maintain accurate inventory, we cannot guarantee the availability of any specific unit size or location until a rental agreement has been completed.</p>
+    <p>US 60 West Storage LLC reserves the right to:</p>
+    <ul>
+      <li>Refuse service</li>
+      <li>Decline reservations</li>
+      <li>Correct pricing or typographical errors</li>
+      <li>Substitute comparable units when necessary</li>
+      <li>Cancel reservations resulting from system or website errors</li>
+    </ul>
+  </div>
+
+  <!-- 4 -->
+  <div class="doc-section">
+    <h2>4. Pricing</h2>
+    <p>Rental rates, promotions, discounts, deposits, administrative fees, and other charges are subject to change without notice unless otherwise required by law.</p>
+    <p>Displayed pricing does not constitute a binding offer and does not guarantee future rental rates. Promotional pricing may have eligibility requirements and may be discontinued at any time.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="doc-section">
+    <h2>5. Online Payments</h2>
+    <p>Customers may submit payments through approved third-party payment processors. By making an online payment, you represent that:</p>
+    <ul>
+      <li>You are authorized to use the selected payment method.</li>
+      <li>The payment information provided is accurate.</li>
+      <li>You authorize US 60 West Storage LLC and its payment processor to charge your payment method.</li>
+    </ul>
+    <p>Online payments remain subject to the payment provisions of your signed Rental Agreement, including applicable due dates, late fees, returned payment fees, and default provisions.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="doc-section">
+    <h2>6. Customer Responsibilities</h2>
+    <p>Customers are responsible for:</p>
+    <ul>
+      <li>Providing accurate personal information.</li>
+      <li>Keeping contact information current.</li>
+      <li>Updating mailing addresses, email addresses, and telephone numbers.</li>
+      <li>Paying rent and applicable charges on time.</li>
+      <li>Securing their storage unit with an appropriate lock.</li>
+      <li>Complying with all facility rules and policies.</li>
+    </ul>
+    <p>Failure to maintain accurate contact information may prevent important notices from being delivered.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="doc-section">
+    <h2>7. Prohibited Uses</h2>
+    <p>Storage units may only be used for lawful storage purposes. The following are strictly prohibited:</p>
+    <ul class="two-col">
+      <li>Explosives</li>
+      <li>Fireworks</li>
+      <li>Hazardous chemicals</li>
+      <li>Toxic materials</li>
+      <li>Corrosive substances</li>
+      <li>Flammable liquids</li>
+      <li>Illegal drugs</li>
+      <li>Stolen property</li>
+      <li>Perishable food</li>
+      <li>Live animals</li>
+      <li>Hazardous waste</li>
+      <li>Items creating odors or infestations</li>
+      <li>Any materials prohibited by law</li>
+    </ul>
+    <p>Storage units may not be used as:</p>
+    <ul class="two-col">
+      <li>Living quarters</li>
+      <li>Offices</li>
+      <li>Workshops</li>
+      <li>Retail businesses</li>
+      <li>Repair facilities</li>
+      <li>Manufacturing spaces</li>
+      <li>Commercial operating locations</li>
+    </ul>
+    <p>Violation of these policies may result in immediate termination of occupancy as permitted by the Rental Agreement and applicable law.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="doc-section">
+    <h2>8. Customer Property</h2>
+    <p>US 60 West Storage LLC does not take possession or custody of property stored within customer units. Customers retain sole responsibility for:</p>
+    <ul>
+      <li>The contents of their unit.</li>
+      <li>The value of stored property.</li>
+      <li>The security of their belongings.</li>
+      <li>Proper packaging and storage.</li>
+    </ul>
+    <p>All property is stored at the customer's own risk.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="doc-section">
+    <h2>9. Insurance</h2>
+    <p>US 60 West Storage LLC does not insure property stored within customer units. Customers are strongly encouraged to obtain insurance covering loss or damage resulting from:</p>
+    <ul class="two-col">
+      <li>Theft</li>
+      <li>Fire</li>
+      <li>Smoke</li>
+      <li>Water damage</li>
+      <li>Mold</li>
+      <li>Weather events</li>
+      <li>Rodents</li>
+      <li>Vandalism</li>
+      <li>Natural disasters</li>
+      <li>Other unforeseen causes</li>
+    </ul>
+    <p>Failure to obtain insurance is solely the customer's responsibility.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="doc-section">
+    <h2>10. Security</h2>
+    <p>While reasonable security measures may be utilized, including surveillance cameras, lighting, fencing, and controlled access systems, no security system can guarantee protection against theft, vandalism, weather damage, or other losses.</p>
+    <p>The presence of security equipment does not create a guarantee of safety or impose additional liability upon US 60 West Storage LLC.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="doc-section">
+    <h2>11. Access to the Facility</h2>
+    <p>Access hours and facility policies may change without notice. US 60 West Storage LLC reserves the right to deny or suspend access when:</p>
+    <ul>
+      <li>Rent is delinquent.</li>
+      <li>The customer is in default.</li>
+      <li>Facility rules are violated.</li>
+      <li>Safety or security concerns exist.</li>
+    </ul>
+  </div>
+
+  <!-- 12 -->
+  <div class="doc-section">
+    <h2>12. Default and Lien Rights</h2>
+    <p>Failure to pay rent or otherwise comply with the Rental Agreement may result in default.</p>
+    <p>Kentucky law grants self-storage operators certain lien rights against stored property for unpaid rent and related charges. If an account remains in default, stored property may be sold or otherwise disposed of in accordance with applicable Kentucky law and the signed Rental Agreement.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="doc-section">
+    <h2>13. Operator Right of Entry</h2>
+    <p>Authorized representatives of US 60 West Storage LLC may enter a storage unit when permitted by law or the Rental Agreement, including but not limited to:</p>
+    <ul>
+      <li>Emergencies</li>
+      <li>Fire or flooding</li>
+      <li>Necessary repairs</li>
+      <li>Safety concerns</li>
+      <li>Suspected hazardous materials</li>
+      <li>Enforcement of the Rental Agreement</li>
+    </ul>
+  </div>
+
+  <!-- 14 -->
+  <div class="doc-section">
+    <h2>14. Electronic Communications</h2>
+    <p>By submitting your contact information through this website, you consent to receive communications regarding:</p>
+    <ul class="two-col">
+      <li>Reservations</li>
+      <li>Billing</li>
+      <li>Payment reminders</li>
+      <li>Account notices</li>
+      <li>Facility updates</li>
+      <li>Service announcements</li>
+    </ul>
+    <p>Communications may be provided by telephone, email, text message, or mail in accordance with applicable law. Marketing communications may be provided where permitted, and you may opt out where applicable.</p>
+  </div>
+
+  <!-- 15 -->
+  <div class="doc-section">
+    <h2>15. Intellectual Property</h2>
+    <p>All website content, including text, graphics, logos, photographs, videos, downloadable materials, designs, and trademarks are the property of US 60 West Storage LLC unless otherwise noted.</p>
+    <p>No content may be copied, reproduced, modified, distributed, or used without prior written permission.</p>
+  </div>
+
+  <!-- 16 -->
+  <div class="doc-section">
+    <h2>16. Third-Party Services</h2>
+    <p>Our website may integrate with third-party providers for:</p>
+    <ul class="two-col">
+      <li>Payment processing</li>
+      <li>Mapping services</li>
+      <li>Website hosting</li>
+      <li>Analytics</li>
+      <li>Email communication</li>
+    </ul>
+    <p>US 60 West Storage LLC is not responsible for the content, privacy practices, availability, or security of third-party websites or services.</p>
+  </div>
+
+  <!-- 17 -->
+  <div class="doc-section">
+    <h2>17. Disclaimer of Warranties</h2>
+    <p>This website is provided on an "AS IS" and "AS AVAILABLE" basis. US 60 West Storage LLC makes no warranties, express or implied, regarding:</p>
+    <ul>
+      <li>Continuous website availability</li>
+      <li>Accuracy of information</li>
+      <li>Freedom from technical errors</li>
+      <li>Compatibility with every device or browser</li>
+      <li>Freedom from viruses or interruptions</li>
+    </ul>
+  </div>
+
+  <!-- 18 -->
+  <div class="doc-section">
+    <h2>18. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, US 60 West Storage LLC shall not be liable for any indirect, incidental, consequential, punitive, or special damages arising from:</p>
+    <ul>
+      <li>Use of this website;</li>
+      <li>Reliance upon website content;</li>
+      <li>Website interruptions;</li>
+      <li>Technical failures;</li>
+      <li>Third-party services;</li>
+      <li>Unauthorized access to website information.</li>
+    </ul>
+    <p>Our total liability shall be limited to the maximum extent permitted under Kentucky law.</p>
+  </div>
+
+  <!-- 19 -->
+  <div class="doc-section">
+    <h2>19. Privacy</h2>
+    <p>Information submitted through this website is used solely for legitimate business purposes, including:</p>
+    <ul>
+      <li>Responding to inquiries;</li>
+      <li>Processing rental requests;</li>
+      <li>Managing customer accounts;</li>
+      <li>Processing payments;</li>
+      <li>Communicating with customers.</li>
+    </ul>
+    <p>US 60 West Storage LLC does not sell customer personal information.</p>
+  </div>
+
+  <!-- 20 -->
+  <div class="doc-section">
+    <h2>20. Modifications</h2>
+    <p>US 60 West Storage LLC reserves the right to modify these Website Terms &amp; Conditions at any time. Changes become effective immediately upon publication on this website. Continued use of the website constitutes acceptance of the revised Terms &amp; Conditions.</p>
+  </div>
+
+  <!-- 21 -->
+  <div class="doc-section">
+    <h2>21. Governing Law</h2>
+    <p>These Website Terms &amp; Conditions shall be governed by and interpreted in accordance with the laws of the Commonwealth of Kentucky. Any legal action arising from the use of this website shall be brought in a court of competent jurisdiction located within the Commonwealth of Kentucky.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="doc-section">
+    <h2>Contact Information</h2>
+    <div class="contact-box">
+      <p><strong>US 60 West Storage LLC</strong></p>
+      <p>822 U.S. 60 W.<br>Ashland, KY 41102</p>
+      <p>Phone: <a href="tel:6062254116">(606) 225-4116</a></p>
+    </div>
+  </div>
+
+  <!-- Acknowledgment -->
+  <div class="acknowledgment">
+    By using this website, submitting information, requesting services, making online payments, or otherwise interacting with US 60 West Storage LLC through this website, you acknowledge that you have read, understood, and agree to be bound by these Website Terms &amp; Conditions.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom-strip">
+    <p class="footer-copy">&copy; 2026 U.S. 60 West Storage LLC. All rights reserved. | 822 US 60 W. Ashland KY 41102</p>
+    <a href="https://neservicewv.com" target="_blank" rel="noopener" class="ne-credit" aria-label="Website created by N.E. Service">
+      <span>Website Created By</span>
+      <img src="Logo/logo-01-1-transparent.png" alt="N.E. Service logo" class="ne-logo" />
+      <span>neservicewv.com</span>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
