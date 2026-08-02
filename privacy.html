@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | U.S. 60 West Storage LLC</title>
+  <meta name="description" content="Privacy Policy for U.S. 60 West Storage LLC, Ashland, KY." />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #c9a227;
+      --gold-light: #e8c04a;
+      --gold-dark:  #a07b10;
+      --black:      #0a0a0a;
+      --charcoal:   #151515;
+      --dark:       #1c1c1c;
+      --dark2:      #222222;
+      --white:      #f5f5f5;
+      --text-muted: #b0b0b0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--charcoal);
+      color: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 2px solid var(--gold);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-logo { height: 60px; width: auto; }
+
+    .header-brand { display: flex; flex-direction: column; }
+
+    .header-brand-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .header-back {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ── PAGE CONTENT ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--gold-dark);
+    }
+
+    .doc-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .doc-company {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .doc-effective {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .doc-effective strong { color: var(--gold-light); }
+
+    .doc-intro {
+      background: var(--dark);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 0.97rem;
+      color: var(--white);
+    }
+
+    .doc-intro p + p { margin-top: 12px; }
+
+    .doc-intro .disclaimer {
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    /* ── SECTIONS ── */
+    .doc-section { margin-bottom: 40px; }
+
+    .doc-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--dark2);
+    }
+
+    .doc-section p {
+      margin-bottom: 12px;
+      color: var(--white);
+      font-size: 0.97rem;
+    }
+
+    .doc-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 14px 0;
+    }
+
+    .doc-section ul li {
+      padding: 5px 0 5px 22px;
+      position: relative;
+      font-size: 0.95rem;
+      color: #d8d8d8;
+    }
+
+    .doc-section ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.8rem;
+      top: 7px;
+    }
+
+    .doc-section ul.two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--dark);
+      border: 1px solid var(--gold-dark);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px !important;
+      font-size: 0.97rem;
+    }
+
+    .contact-box strong { color: var(--gold); }
+
+    /* ── ACKNOWLEDGMENT ── */
+    .acknowledgment {
+      background: var(--dark2);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 48px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 2px solid var(--gold);
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .footer-bottom-strip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .footer-copy a { color: var(--gold); }
+
+    .ne-credit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      transition: color 0.2s;
+    }
+
+    .ne-credit:hover { color: var(--gold); text-decoration: none; }
+    .ne-logo { height: 36px; width: auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 36px 20px 60px; }
+      header { padding: 14px 20px; }
+      .doc-section ul.two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html">
+    <img src="Images/Header_files/Logo Basic Transparent.png" alt="U.S. 60 West Storage LLC logo" class="header-logo" />
+  </a>
+  <div class="header-brand">
+    <span class="header-brand-name">U.S. 60 West Storage LLC</span>
+    <span class="header-back"><a href="index.html">← Back to Home</a></span>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="page-wrap">
+
+  <div class="doc-header">
+    <div class="doc-title">Privacy Policy</div>
+    <div class="doc-company">US 60 West Storage LLC</div>
+    <div class="doc-effective">Effective Date: <strong>August 2, 2026</strong></div>
+  </div>
+
+  <div class="doc-intro">
+    <p>US 60 West Storage LLC ("Company," "we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, disclose, and safeguard your information when you visit our website, contact us, rent a storage unit, or use any of our services.</p>
+    <p class="disclaimer">By accessing or using our website, you acknowledge that you have read and agree to this Privacy Policy.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="doc-section">
+    <h2>1. Information We Collect</h2>
+    <p>We may collect personal information that you voluntarily provide when you:</p>
+    <ul>
+      <li>Request information about our storage units</li>
+      <li>Submit a contact form</li>
+      <li>Reserve or rent a storage unit</li>
+      <li>Make an online payment</li>
+      <li>Contact us by phone, email, or text message</li>
+      <li>Sign up for promotions or updates</li>
+    </ul>
+    <p>Personal information may include:</p>
+    <ul class="two-col">
+      <li>Full name</li>
+      <li>Mailing address</li>
+      <li>Email address</li>
+      <li>Telephone number</li>
+      <li>Driver's license or government-issued ID</li>
+      <li>Emergency contact information</li>
+      <li>Payment information</li>
+      <li>Rental history</li>
+      <li>Communication preferences</li>
+      <li>Any additional information you provide</li>
+    </ul>
+    <p>We may also automatically collect limited technical information, including:</p>
+    <ul class="two-col">
+      <li>IP address</li>
+      <li>Browser type</li>
+      <li>Device information</li>
+      <li>Operating system</li>
+      <li>Website usage statistics</li>
+      <li>Cookies and similar technologies</li>
+    </ul>
+  </div>
+
+  <!-- 2 -->
+  <div class="doc-section">
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ul class="two-col">
+      <li>Process rental inquiries</li>
+      <li>Create and manage customer accounts</li>
+      <li>Verify customer identity</li>
+      <li>Process payments</li>
+      <li>Provide customer support</li>
+      <li>Communicate regarding your rental</li>
+      <li>Send invoices and payment reminders</li>
+      <li>Respond to questions or requests</li>
+      <li>Improve our website and services</li>
+      <li>Detect fraud or unauthorized activity</li>
+      <li>Comply with legal obligations</li>
+      <li>Protect our business, customers, and property</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+  <div class="doc-section">
+    <h2>3. Electronic Communications</h2>
+    <p>By providing your contact information, you consent to receive communications from US 60 West Storage LLC regarding:</p>
+    <ul class="two-col">
+      <li>Rental inquiries</li>
+      <li>Reservations</li>
+      <li>Account notifications</li>
+      <li>Payment confirmations</li>
+      <li>Billing reminders</li>
+      <li>Past due notices</li>
+      <li>Service announcements</li>
+      <li>Facility updates</li>
+      <li>Important changes affecting your account</li>
+    </ul>
+    <p>Communications may be sent by:</p>
+    <ul>
+      <li>Telephone</li>
+      <li>Email</li>
+      <li>Text message (SMS)</li>
+      <li>U.S. Mail</li>
+    </ul>
+    <p>Where required by law, you may opt out of promotional or marketing communications while continuing to receive communications necessary to administer your account.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="doc-section">
+    <h2>4. Payment Information</h2>
+    <p>Online payments are processed through secure third-party payment providers.</p>
+    <p>US 60 West Storage LLC does not store complete credit card or debit card information on its website unless specifically required by the payment processor. Payment information is handled according to the security standards of the third-party payment processor.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="doc-section">
+    <h2>5. Cookies and Website Analytics</h2>
+    <p>Our website may use cookies and similar technologies to:</p>
+    <ul>
+      <li>Improve website performance</li>
+      <li>Remember user preferences</li>
+      <li>Analyze website traffic</li>
+      <li>Improve user experience</li>
+      <li>Monitor website security</li>
+    </ul>
+    <p>Most web browsers allow you to disable cookies through your browser settings; however, certain website features may not function properly if cookies are disabled.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="doc-section">
+    <h2>6. How We Protect Your Information</h2>
+    <p>We implement reasonable administrative, technical, and physical safeguards designed to protect your personal information from unauthorized access, disclosure, misuse, or alteration.</p>
+    <p>While we strive to maintain secure systems, no method of electronic storage or internet transmission is completely secure. Therefore, we cannot guarantee absolute security.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="doc-section">
+    <h2>7. Information Sharing</h2>
+    <p>US 60 West Storage LLC does not sell your personal information.</p>
+    <p>We may share information only when necessary with:</p>
+    <ul>
+      <li>Payment processors</li>
+      <li>Website hosting providers</li>
+      <li>Technology service providers</li>
+      <li>Legal authorities when required by law</li>
+      <li>Collection agencies or attorneys when necessary to enforce a Rental Agreement or recover unpaid amounts</li>
+      <li>Government agencies when legally required</li>
+    </ul>
+    <p>Information is shared only as reasonably necessary to operate our business or comply with applicable law.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="doc-section">
+    <h2>8. Storage Rental Information</h2>
+    <p>Information collected during the rental process may include documentation required to establish or maintain your storage account. This information may be used to:</p>
+    <ul>
+      <li>Verify identity</li>
+      <li>Administer your rental</li>
+      <li>Contact you regarding your account</li>
+      <li>Enforce the Rental Agreement</li>
+      <li>Comply with applicable Kentucky law</li>
+    </ul>
+    <p>The signed Rental Agreement governs the handling of customer account information related to the rental relationship.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="doc-section">
+    <h2>9. Retention of Information</h2>
+    <p>We retain customer information only for as long as necessary to:</p>
+    <ul>
+      <li>Maintain customer accounts</li>
+      <li>Fulfill contractual obligations</li>
+      <li>Comply with tax, accounting, or legal requirements</li>
+      <li>Resolve disputes</li>
+      <li>Enforce agreements</li>
+      <li>Protect our legal rights</li>
+    </ul>
+    <p>When information is no longer required, it will be securely deleted or destroyed when reasonably practicable.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="doc-section">
+    <h2>10. Third-Party Websites</h2>
+    <p>Our website may contain links to third-party websites, including:</p>
+    <ul class="two-col">
+      <li>Payment processors</li>
+      <li>Maps and directions</li>
+      <li>Social media platforms</li>
+      <li>Other business resources</li>
+    </ul>
+    <p>US 60 West Storage LLC is not responsible for the privacy practices or content of third-party websites. We encourage you to review the privacy policies of those websites before providing personal information.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="doc-section">
+    <h2>11. Children's Privacy</h2>
+    <p>Our website and services are not directed toward children under the age of 13. We do not knowingly collect personal information from children. If we become aware that such information has been collected without parental consent where required, we will take reasonable steps to remove it.</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="doc-section">
+    <h2>12. Your Privacy Rights</h2>
+    <p>Subject to applicable law, you may request to:</p>
+    <ul>
+      <li>Access certain personal information we maintain about you</li>
+      <li>Correct inaccurate information</li>
+      <li>Update your contact information</li>
+      <li>Request deletion of information where legally permitted</li>
+      <li>Ask questions regarding our privacy practices</li>
+    </ul>
+    <p>Certain information may be retained where required by law or necessary to enforce contractual obligations.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="doc-section">
+    <h2>13. Security of Stored Property Information</h2>
+    <p>Customer account information is maintained separately from any property stored within rental units.</p>
+    <p>US 60 West Storage LLC does not inventory, monitor, or maintain a list of the contents of customer storage units except where required by law or during circumstances authorized by the Rental Agreement.</p>
+  </div>
+
+  <!-- 14 -->
+  <div class="doc-section">
+    <h2>14. Changes to This Privacy Policy</h2>
+    <p>US 60 West Storage LLC reserves the right to update or modify this Privacy Policy at any time. Any changes become effective immediately upon posting to this website. Continued use of the website after changes are posted constitutes acceptance of the revised Privacy Policy.</p>
+  </div>
+
+  <!-- 15 -->
+  <div class="doc-section">
+    <h2>15. Contact Us</h2>
+    <p>If you have questions regarding this Privacy Policy or our handling of personal information, please contact us:</p>
+    <div class="contact-box">
+      <p><strong>US 60 West Storage LLC</strong></p>
+      <p>822 U.S. 60 W.<br>Ashland, KY 41102</p>
+      <p>Phone: <a href="tel:6062254116">(606) 225-4116</a></p>
+    </div>
+  </div>
+
+  <!-- Consent -->
+  <div class="acknowledgment">
+    By using this website, submitting personal information, requesting information, making online payments, or renting a storage unit from US 60 West Storage LLC, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom-strip">
+    <p class="footer-copy">&copy; 2026 U.S. 60 West Storage LLC. All rights reserved. | 822 US 60 W. Ashland KY 41102 | <a href="terms.html">Terms &amp; Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    <a href="https://neservicewv.com" target="_blank" rel="noopener" class="ne-credit" aria-label="Website created by N.E. Service">
+      <span>Website Created By</span>
+      <img src="Logo/logo-01-1-transparent.png" alt="N.E. Service logo" class="ne-logo" />
+      <span>neservicewv.com</span>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
