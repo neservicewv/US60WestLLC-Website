@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S. 60 West Storage LLC | Ashland, KY | Secure Self-Storage 24/7</title>
+  <meta name="description" content="U.S. 60 West Storage LLC offers affordable, secure self-storage units in Ashland, KY. 10×10 and 10×25 units available. 24/7 access, camera surveillance, night lighting. Call 606-225-4116." />
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SelfStorage",
+    "name": "U.S. 60 West Storage LLC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "822 US-60",
+      "addressLocality": "Ashland",
+      "addressRegion": "KY",
+      "postalCode": "41102",
+      "addressCountry": "US"
+    },
+    "telephone": "+16062254116",
+    "url": "https://us60weststorage.com",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "description": "Secure, affordable self-storage in Ashland, Kentucky. 24/7 access, camera surveillance, night lighting, and flexible short-term and long-term rental options."
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:        #c9a227;
+      --gold-light:  #e8c04a;
+      --gold-dark:   #a07b10;
+      --black:       #0a0a0a;
+      --charcoal:    #151515;
+      --dark:        #1c1c1c;
+      --dark2:       #222222;
+      --white:       #f5f5f5;
+      --text-muted:  #b0b0b0;
+      --header-h:    80px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--charcoal);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; text-decoration: none; }
+
+    .gold { color: var(--gold); }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 3px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .gold-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), var(--gold-dark));
+      margin: 18px 0 28px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 600px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.25s ease;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-dark));
+      color: #000;
+      border-color: var(--gold);
+    }
+    .btn-gold:hover { background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold)); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,162,39,0.4); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+    .btn-outline:hover { background: var(--gold); color: #000; transform: translateY(-2px); }
+
+    .btn-white {
+      background: var(--white);
+      color: #000;
+      border-color: var(--white);
+    }
+    .btn-white:hover { background: transparent; color: var(--white); transform: translateY(-2px); }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    #site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,0.97);
+      border-bottom: 1px solid rgba(201,162,39,0.3);
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 20px;
+      gap: 16px;
+    }
+
+    .header-logo {
+      flex-shrink: 0;
+    }
+    .header-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+    .header-nav a {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      padding: 6px 10px;
+      border-radius: 3px;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover, .header-nav a.active { color: var(--gold); }
+
+    .header-phone {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: #000;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      padding: 10px 18px;
+      border-radius: 3px;
+      border: 2px solid var(--gold-light);
+      transition: all 0.25s;
+      white-space: nowrap;
+    }
+    .header-phone:hover { background: var(--gold-light); transform: scale(1.02); }
+    .header-phone svg { width: 16px; height: 16px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 6px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--gold);
+      transition: all 0.3s;
+      border-radius: 2px;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--header-h);
+      left: 0; right: 0;
+      background: rgba(10,10,10,0.98);
+      border-bottom: 2px solid var(--gold);
+      z-index: 999;
+      padding: 20px;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(201,162,39,0.15);
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .mobile-phone-btn {
+      margin-top: 12px;
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: #000;
+      font-weight: 800;
+      padding: 16px;
+      text-align: center;
+      border-radius: 3px;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    #hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-top: var(--header-h);
+      background: var(--black);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('Images/bfc66508-fd86-4335-b702-b5272a6e3ba6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(0,0,0,0.92) 0%,
+        rgba(0,0,0,0.75) 50%,
+        rgba(0,0,0,0.45) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,162,39,0.15);
+      border: 1px solid rgba(201,162,39,0.5);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .hero-tagline::before, .hero-tagline::after {
+      content: '— ';
+    }
+    .hero-tagline::after { content: ' —'; }
+
+    .hero-address {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 30px;
+    }
+    .hero-address-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .hero-address-line svg { color: var(--gold); flex-shrink: 0; }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .hero-feat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,162,39,0.1);
+      border: 1px solid rgba(201,162,39,0.25);
+      padding: 10px 16px;
+      border-radius: 3px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .hero-feat .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       UNIT SIZES
+    ============================================================ */
+    #unit-sizes {
+      background: var(--black);
+      padding: 90px 0;
+    }
+
+    .unit-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .unit-card {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 36px 32px;
+      position: relative;
+      transition: transform 0.25s, box-shadow 0.25s;
+      overflow: hidden;
+    }
+    .unit-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at top left, rgba(201,162,39,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .unit-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,162,39,0.4); }
+
+    .unit-size-label {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .unit-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .unit-price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .unit-price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+
+    .unit-deposit {
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .unit-divider { border: none; border-top: 1px solid rgba(201,162,39,0.2); margin: 20px 0; }
+
+    .unit-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .unit-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .unit-features li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .unit-btns { display: flex; flex-direction: column; gap: 10px; }
+
+    .deposit-note {
+      margin-top: 36px;
+      background: rgba(201,162,39,0.07);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-left: 3px solid var(--gold);
+      padding: 18px 22px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-radius: 0 3px 3px 0;
+    }
+    .deposit-note strong { color: var(--gold); }
+
+    /* ============================================================
+       STORAGE CALCULATOR
+    ============================================================ */
+    #calculator {
+      background: var(--charcoal);
+      padding: 90px 0;
+      border-top: 1px solid rgba(201,162,39,0.15);
+      border-bottom: 1px solid rgba(201,162,39,0.15);
+    }
+
+    .calc-wrapper {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .calc-section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(201,162,39,0.2);
+      padding-bottom: 8px;
+    }
+
+    .situation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .situation-btn {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,162,39,0.2);
+      color: var(--white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 10px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+    }
+    .situation-btn:hover, .situation-btn.selected {
+      background: rgba(201,162,39,0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .items-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .item-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 8px 12px;
+      border-radius: 3px;
+    }
+    .item-label { font-size: 0.8rem; color: var(--text-muted); }
+    .item-controls { display: flex; align-items: center; gap: 8px; }
+    .item-controls button {
+      width: 24px; height: 24px;
+      background: rgba(201,162,39,0.15);
+      border: 1px solid rgba(201,162,39,0.3);
+      color: var(--gold);
+      font-size: 1rem;
+      line-height: 1;
+      border-radius: 3px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .item-controls button:hover { background: rgba(201,162,39,0.35); }
+    .item-qty { font-size: 0.9rem; font-weight: 700; color: var(--white); min-width: 20px; text-align: center; }
+
+    .calc-submit {
+      margin-top: 28px;
+    }
+
+    .calc-result {
+      margin-top: 28px;
+      display: none;
+      background: rgba(201,162,39,0.07);
+      border: 1px solid rgba(201,162,39,0.35);
+      border-left: 3px solid var(--gold);
+      padding: 24px;
+      border-radius: 0 3px 3px 0;
+      animation: fadeIn 0.4s ease;
+    }
+    .calc-result.show { display: block; }
+
+    .calc-result-size {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .calc-result-price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .calc-result-reason {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .calc-disclaimer {
+      font-size: 0.78rem;
+      color: rgba(176,176,176,0.7);
+      border-top: 1px solid rgba(201,162,39,0.15);
+      padding-top: 12px;
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ============================================================
+       FEATURES
+    ============================================================ */
+    #features {
+      background: var(--black);
+      padding: 90px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.15);
+      border-top: 2px solid var(--gold);
+      padding: 30px 24px;
+      border-radius: 4px;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.4); border-color: rgba(201,162,39,0.5); }
+
+    .feature-icon {
+      width: 52px; height: 52px;
+      background: rgba(201,162,39,0.12);
+      border: 1px solid rgba(201,162,39,0.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+      font-size: 1.4rem;
+    }
+
+    .feature-title {
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .feature-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ============================================================
+       GALLERY
+    ============================================================ */
+    #gallery {
+      background: var(--charcoal);
+      padding: 90px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 220px;
+      gap: 12px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 3px;
+      cursor: pointer;
+      border: 1px solid rgba(201,162,39,0.15);
+    }
+    .gallery-item.wide { grid-column: span 2; }
+    .gallery-item.tall { grid-row: span 2; }
+
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.07); }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-caption { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--white); }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0,0,0,0.94);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-img { max-width: 90vw; max-height: 85vh; object-fit: contain; border: 1px solid rgba(201,162,39,0.3); }
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 20px;
+      background: rgba(201,162,39,0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 1.5rem;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+    }
+    .lightbox-close:hover { background: var(--gold); color: #000; }
+    .lightbox-caption {
+      position: absolute;
+      bottom: 20px;
+      left: 50%; transform: translateX(-50%);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(0,0,0,0.6);
+      padding: 8px 16px;
+      border-radius: 3px;
+    }
+
+    /* ============================================================
+       ABOUT
+    ============================================================ */
+    #about {
+      background: var(--dark);
+      padding: 90px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-img {
+      position: relative;
+    }
+    .about-img img {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid rgba(201,162,39,0.25);
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    .about-img::after {
+      content: '';
+      position: absolute;
+      bottom: -10px; right: -10px;
+      width: 60%;
+      height: 60%;
+      border-bottom: 3px solid var(--gold);
+      border-right: 3px solid var(--gold);
+      pointer-events: none;
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .about-stats {
+      display: flex;
+      gap: 30px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .about-stat { text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 900; color: var(--gold); line-height: 1; }
+    .stat-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: 4px; }
+
+    /* ============================================================
+       COMING SOON
+    ============================================================ */
+    #coming-soon {
+      background: var(--black);
+      padding: 90px 0;
+    }
+
+    .coming-soon-card {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-top: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 56px 48px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .coming-soon-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,162,39,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+      background: rgba(201,162,39,0.12);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .coming-soon-title {
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .coming-soon-desc {
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+
+    /* ============================================================
+       DEPOSIT POLICY
+    ============================================================ */
+    #deposit-policy {
+      background: var(--charcoal);
+      padding: 90px 0;
+      border-top: 1px solid rgba(201,162,39,0.15);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .step-card {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.15);
+      padding: 32px 24px;
+      border-radius: 4px;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-number {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: #000;
+      font-size: 1.4rem;
+      font-weight: 900;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+
+    .step-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .step-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+    .deposit-amounts {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+    .deposit-amount {
+      flex: 1;
+      min-width: 200px;
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-top: 2px solid var(--gold);
+      padding: 20px 24px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .deposit-amount .size { font-size: 1.1rem; font-weight: 900; color: var(--white); text-transform: uppercase; }
+    .deposit-amount .amount { font-size: 1.4rem; font-weight: 900; color: var(--gold); }
+    .deposit-amount .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+
+    /* ============================================================
+       PAYMENTS
+    ============================================================ */
+    #payments {
+      background: var(--black);
+      padding: 90px 0;
+    }
+
+    .payment-cards {
+      display: flex;
+      gap: 24px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .payment-card {
+      flex: 1;
+      min-width: 240px;
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-top: 2px solid var(--gold);
+      padding: 32px 28px;
+      border-radius: 4px;
+      text-align: center;
+      transition: transform 0.25s;
+    }
+    .payment-card:hover { transform: translateY(-3px); }
+
+    .payment-icon { font-size: 2.4rem; margin-bottom: 14px; }
+    .payment-name { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 8px; }
+    .payment-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+    .payment-placeholder {
+      background: rgba(201,162,39,0.07);
+      border: 1px dashed rgba(201,162,39,0.3);
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      color: rgba(201,162,39,0.5);
+      font-style: italic;
+      letter-spacing: 0.04em;
+    }
+    /* === REPLACE THESE PLACEHOLDERS WITH REAL PAYMENT LINKS === */
+    /* PayPal: replace href="#paypal-link-here" with your actual PayPal.me link */
+    /* Cash App: replace href="#cashapp-link-here" with your actual $CashTag link */
+
+    /* ============================================================
+       FAQ
+    ============================================================ */
+    #faq {
+      background: var(--charcoal);
+      padding: 90px 0;
+      border-top: 1px solid rgba(201,162,39,0.15);
+    }
+
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 8px; }
+
+    .faq-item {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.15);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-question.active { color: var(--gold); }
+
+    .faq-chevron {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      color: var(--gold);
+      transition: transform 0.3s;
+    }
+    .faq-question.active .faq-chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 18px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      border-top: 1px solid rgba(201,162,39,0.1);
+      padding-top: 14px;
+    }
+    .faq-answer.open { display: block; animation: fadeIn 0.25s ease; }
+
+    /* ============================================================
+       CONTACT
+    ============================================================ */
+    #contact {
+      background: var(--black);
+      padding: 90px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 50px;
+      margin-top: 40px;
+      align-items: start;
+    }
+
+    .contact-info { display: flex; flex-direction: column; gap: 20px; max-width: 560px; }
+
+    .contact-info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .contact-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(201,162,39,0.1);
+      border: 1px solid rgba(201,162,39,0.25);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+    .contact-detail-title { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 4px; }
+    .contact-detail-value { font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; }
+    .contact-detail-value a { color: var(--white); font-weight: 600; transition: color 0.2s; }
+    .contact-detail-value a:hover { color: var(--gold); }
+
+    .contact-action-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+
+    .contact-form-wrap {
+      background: var(--dark);
+      border: 1px solid rgba(201,162,39,0.2);
+      border-top: 3px solid var(--gold);
+      padding: 36px 32px;
+      border-radius: 4px;
+    }
+
+    .form-title { font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 24px; }
+
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: span 2; }
+
+    .form-group label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      font-size: 0.9rem;
+      padding: 12px 14px;
+      border-radius: 3px;
+      outline: none;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select option { background: var(--dark); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-submit { margin-top: 20px; width: 100%; justify-content: center; font-size: 1rem; padding: 15px; }
+
+    .form-success {
+      display: none;
+      background: rgba(201,162,39,0.1);
+      border: 1px solid var(--gold);
+      border-radius: 3px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+      color: var(--gold);
+      font-weight: 700;
+      animation: fadeIn 0.4s ease;
+    }
+    .form-success.show { display: block; }
+
+    .map-wrap {
+      position: relative;
+      border: 1px solid rgba(201,162,39,0.3);
+      border-top: 3px solid var(--gold);
+      border-radius: 3px;
+      overflow: hidden;
+      min-height: 380px;
+    }
+    .map-wrap iframe { display: block; }
+    .map-overlay-btn {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      background: rgba(10,10,10,0.88);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .map-overlay-btn:hover { background: var(--gold); color: #000; }
+
+    .fb-icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(24,119,242,0.15);
+      border: 1px solid rgba(24,119,242,0.4);
+      color: #4a9ff5;
+      border-radius: 50%;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      flex-shrink: 0;
+    }
+    .fb-icon-btn:hover { background: #1877f2; color: #fff; transform: scale(1.1); }
+    .fb-icon-btn.footer-fb {
+      width: auto;
+      border-radius: 3px;
+      padding: 8px 14px;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hours-note {
+      margin-top: 28px;
+      background: rgba(201,162,39,0.07);
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-radius: 0 3px 3px 0;
+    }
+    .hours-note strong { color: var(--gold); }
+
+    /* ============================================================
+       CALL BAR
+    ============================================================ */
+    .call-bar {
+      background: linear-gradient(135deg, #111 0%, #1a1400 50%, #111 100%);
+      border-top: 2px solid rgba(201,162,39,0.4);
+      border-bottom: 2px solid rgba(201,162,39,0.4);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .call-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .call-bar-text {
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--white);
+    }
+    .call-bar-text span { color: var(--gold); }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer {
+      background: var(--black);
+      border-top: 1px solid rgba(201,162,39,0.2);
+      padding: 60px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(201,162,39,0.1);
+    }
+
+    .footer-logo img { height: 70px; margin-bottom: 16px; }
+    .footer-tagline { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .footer-addr { font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; }
+    .footer-addr a { color: var(--gold); font-weight: 600; }
+
+    .footer-col-title { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; border-bottom: 1px solid rgba(201,162,39,0.2); padding-bottom: 8px; }
+    .footer-nav { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-nav a { font-size: 0.85rem; color: var(--text-muted); transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--gold); }
+
+    .footer-payment { display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: var(--text-muted); }
+    .footer-payment strong { color: var(--white); }
+
+    .footer-bottom {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copy { font-size: 0.78rem; color: rgba(176,176,176,0.5); }
+    .ne-credit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .ne-credit:hover { opacity: 1; }
+    .ne-credit-text {
+      font-size: 0.72rem;
+      color: rgba(176,176,176,0.6);
+      white-space: nowrap;
+    }
+    .ne-logo {
+      height: 50px;
+      width: auto;
+    }
+    .ne-credit-url {
+      font-size: 0.72rem;
+      color: #4a9ff5;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .footer-cta { }
+
+    /* ============================================================
+       FOCUS & ACCESSIBILITY
+    ============================================================ */
+    a:focus-visible,
+    button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 200px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .calc-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      :root { --header-h: 64px; }
+      .header-nav { display: none; }
+      .header-phone.desktop-phone { display: none; }
+      .hamburger { display: flex; }
+
+      .unit-cards { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 170px; }
+      .gallery-item.wide { grid-column: span 2; }
+      .gallery-item.tall { grid-row: span 1; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img::after { display: none; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .map-wrap { min-height: 280px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: span 1; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .situation-grid { grid-template-columns: 1fr; }
+      .items-grid { grid-template-columns: 1fr; }
+      .calc-wrapper { padding: 24px 16px; }
+      .coming-soon-card { padding: 36px 24px; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item.wide { grid-column: span 1; }
+      .hero-features { flex-direction: column; }
+      .hero-btns { flex-direction: column; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#hero" class="header-logo" aria-label="U.S. 60 West Storage LLC — Home">
+      <img src="Images/Header_files/Logo Basic Transparent.png" alt="U.S. 60 West Storage LLC logo" />
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="header-nav" id="main-nav">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#unit-sizes">Unit Sizes</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#calculator">Storage Calculator</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:6062254116" class="header-phone desktop-phone" aria-label="Call us at 606-225-4116">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      606-225-4116
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#unit-sizes" onclick="closeMobileMenu()">Unit Sizes</a>
+  <a href="#features" onclick="closeMobileMenu()">Features</a>
+  <a href="#calculator" onclick="closeMobileMenu()">Storage Calculator</a>
+  <a href="#about" onclick="closeMobileMenu()">About Us</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="tel:6062254116" class="mobile-phone-btn">📞 Call 606-225-4116</a>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero" aria-label="Hero — U.S. 60 West Storage LLC">
+  <div class="hero-bg" role="img" aria-label="Rows of secure storage units at U.S. 60 West Storage LLC"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--gold);"></span>
+      Ashland, Kentucky
+    </div>
+    <h1 class="hero-title">U.S. 60 West<br>Storage LLC</h1>
+    <p class="hero-tagline">Safe. Secure. Accessible 24/7.</p>
+    <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:24px;">Short-Term and Long-Term Storage Available</p>
+
+    <div class="hero-address">
+      <div class="hero-address-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        822 US-60, Ashland, KY 41102
+      </div>
+      <div class="hero-address-line">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        <a href="tel:6062254116" style="color:var(--gold);font-weight:700;">606-225-4116</a>
+      </div>
+      <div class="hero-address-line">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.884v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        <a href="https://www.facebook.com/profile.php?id=61559502758323" target="_blank" rel="noopener" style="color:#4a9ff5;font-weight:700;transition:color 0.2s;" onmouseover="this.style.color='#74b9ff'" onmouseout="this.style.color='#4a9ff5'">Find Us On Facebook</a>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#unit-sizes" class="btn btn-gold">View Unit Sizes</a>
+      <a href="tel:6062254116" class="btn btn-outline">📞 Call Now</a>
+    </div>
+
+    <div class="hero-features">
+      <div class="hero-feat"><span class="dot"></span>24/7 Access</div>
+      <div class="hero-feat"><span class="dot"></span>24-Hour Camera Surveillance</div>
+      <div class="hero-feat"><span class="dot"></span>Night Lighting</div>
+      <div class="hero-feat"><span class="dot"></span>Short-Term &amp; Long-Term Rentals</div>
+      <div class="hero-feat"><span class="dot"></span>Online Payments</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     UNIT SIZES
+============================================================ -->
+<section id="unit-sizes" aria-labelledby="unit-sizes-heading">
+  <div class="container">
+    <span class="section-label">Available Units</span>
+    <h2 class="section-title" id="unit-sizes-heading">Storage Unit Sizes &amp; Pricing</h2>
+    <div class="gold-divider"></div>
+    <p class="section-subtitle">Two sizes to fit your needs — from a single room's worth of belongings to large furniture, appliances, or business inventory.</p>
+
+    <div class="unit-cards">
+      <!-- 10x10 -->
+      <article class="unit-card" aria-label="10 by 10 storage unit">
+        <div class="unit-size-label">10' × 10'</div>
+        <div class="unit-type">Standard Unit</div>
+        <div class="unit-price">$65.00 <span>/ month</span></div>
+        <div class="unit-deposit">+ $40.00 refundable clean-out deposit</div>
+        <hr class="unit-divider">
+        <ul class="unit-features">
+          <li>Ideal for furniture, boxes, and household items</li>
+          <li>Fits the contents of approximately a one-bedroom apartment</li>
+          <li>Perfect for small appliances and seasonal storage</li>
+          <li>Great for downsizing or temporary moving storage</li>
+        </ul>
+        <div class="unit-btns">
+          <a href="tel:6062254116" class="btn btn-gold">📞 Call About Availability</a>
+          <a href="#contact" class="btn btn-outline">Choose This Size</a>
+        </div>
+      </article>
+
+      <!-- 10x25 -->
+      <article class="unit-card" aria-label="10 by 25 storage unit">
+        <div class="unit-size-label">10' × 25'</div>
+        <div class="unit-type">Large Unit</div>
+        <div class="unit-price">$130.00 <span>/ month</span></div>
+        <div class="unit-deposit">+ $60.00 refundable clean-out deposit</div>
+        <hr class="unit-divider">
+        <ul class="unit-features">
+          <li>Ideal for larger moves and multiple rooms</li>
+          <li>Business inventory, appliances, and large furniture</li>
+          <li>Renovation storage, extra-large households</li>
+          <li>Vehicle-sized storage needs when appropriate</li>
+        </ul>
+        <div class="unit-btns">
+          <a href="tel:6062254116" class="btn btn-gold">📞 Call About Availability</a>
+          <a href="#contact" class="btn btn-outline">Choose This Size</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="deposit-note">
+      <strong>Deposit Refund Policy:</strong> The clean-out deposit is fully refunded when your account is fully paid and current, your unit is completely emptied, and the unit is left clean at move-out.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STORAGE CALCULATOR
+============================================================ -->
+<section id="calculator" aria-labelledby="calc-heading">
+  <div class="container">
+    <span class="section-label">Storage Estimator</span>
+    <h2 class="section-title" id="calc-heading">Which Unit Size Do I Need?</h2>
+    <div class="gold-divider"></div>
+    <p class="section-subtitle">Answer a few quick questions and our calculator will recommend the right unit for your needs.</p>
+
+    <div class="calc-wrapper">
+      <div class="calc-grid">
+        <!-- Left: Situation -->
+        <div>
+          <div class="calc-section-title">Step 1 — Choose Your Situation</div>
+          <div class="situation-grid" id="situation-grid">
+            <button class="situation-btn" data-score="30" onclick="selectSituation(this)">Studio / Small Apartment</button>
+            <button class="situation-btn" data-score="50" onclick="selectSituation(this)">One-Bedroom Apartment</button>
+            <button class="situation-btn" data-score="80" onclick="selectSituation(this)">Two-Bedroom Home</button>
+            <button class="situation-btn" data-score="120" onclick="selectSituation(this)">Three-Bedroom Home</button>
+            <button class="situation-btn" data-score="70" onclick="selectSituation(this)">Business Inventory</button>
+            <button class="situation-btn" data-score="60" onclick="selectSituation(this)">Renovation Storage</button>
+            <button class="situation-btn" data-score="55" onclick="selectSituation(this)">Moving Storage</button>
+            <button class="situation-btn" data-score="25" onclick="selectSituation(this)">Seasonal Storage</button>
+          </div>
+
+          <div class="calc-section-title" style="margin-top:8px;">Step 2 — Add Your Items</div>
+          <div class="items-grid" id="items-grid">
+            <!-- items injected by JS -->
+          </div>
+        </div>
+
+        <!-- Right: Result -->
+        <div>
+          <div class="calc-section-title">Step 3 — Get Your Recommendation</div>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:20px;">Select your situation and any items you plan to store, then click the button below to see which unit size we recommend.</p>
+
+          <button class="btn btn-gold" onclick="calcRecommend()" style="width:100%;justify-content:center;">Calculate My Storage Needs</button>
+          <button class="btn btn-outline" onclick="resetCalc()" style="width:100%;justify-content:center;margin-top:10px;">Reset</button>
+
+          <div class="calc-result" id="calc-result" role="region" aria-live="polite">
+            <div class="calc-result-size" id="result-size"></div>
+            <div class="calc-result-price" id="result-price"></div>
+            <div class="calc-result-reason" id="result-reason"></div>
+            <a href="tel:6062254116" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:8px;">📞 Call 606-225-4116</a>
+            <div class="calc-disclaimer">
+              <strong>Disclaimer:</strong> This calculator provides an estimate only. Actual space requirements vary depending on how items are packed and arranged. We recommend calling us to discuss your specific needs before renting.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES
+============================================================ -->
+<section id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <span class="section-label">Why Choose Us</span>
+    <h2 class="section-title" id="features-heading">Facility Features</h2>
+    <div class="gold-divider"></div>
+
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🔓</div>
+        <h3 class="feature-title">24/7 Access</h3>
+        <p class="feature-desc">Access your belongings at any time — day or night. Our facility is always open so your schedule is never a barrier.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">📹</div>
+        <h3 class="feature-title">24-Hour Camera Surveillance</h3>
+        <p class="feature-desc">Round-the-clock video monitoring provides an extra layer of security and peace of mind for every renter.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">💡</div>
+        <h3 class="feature-title">Night Lighting</h3>
+        <p class="feature-desc">A well-lit facility improves visibility and security after dark, making night-time visits comfortable and safe.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">📅</div>
+        <h3 class="feature-title">Seven-Day Access</h3>
+        <p class="feature-desc">We're here for you every day of the week. Access your unit whenever you need it, including weekends and holidays.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">📦</div>
+        <h3 class="feature-title">Short &amp; Long-Term Rentals</h3>
+        <p class="feature-desc">Flexible storage options accommodate short-term needs during a move and extended storage for ongoing situations.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">💳</div>
+        <h3 class="feature-title">Online Payments</h3>
+        <p class="feature-desc">Pay conveniently online using PayPal or Cash App — no need to mail checks or make extra trips.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+============================================================ -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <span class="section-label">Facility Photos</span>
+    <h2 class="section-title" id="gallery-heading">Take a Look Inside</h2>
+    <div class="gold-divider"></div>
+
+    <div class="gallery-grid" id="gallery-grid">
+
+      <figure class="gallery-item wide" onclick="openLightbox(this)" data-caption="Facility overview — U.S. 60 West Storage LLC, Ashland, KY" tabindex="0" role="button" aria-label="Open full-size image: Aerial view of the full storage facility">
+        <img src="Images/9a304e4a-1f82-4249-8898-9955c3721f24.jpg" alt="Aerial view of U.S. 60 West Storage LLC showing multiple rows of storage units with green doors and tan metal siding in Ashland, KY" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Facility Overview</span></div>
+      </figure>
+
+      <figure class="gallery-item tall" onclick="openLightbox(this)" data-caption="Storage unit aisle — wide drive aisle between rows of units" tabindex="0" role="button" aria-label="Open full-size image: Wide aisle between storage unit rows">
+        <img src="Images/bfc66508-fd86-4335-b702-b5272a6e3ba6.jpg" alt="Wide gravel aisle running between two long rows of green-door storage units at U.S. 60 West Storage LLC" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Drive Aisle</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Close-up of units 1 and 2 — green roll-up doors and night lighting" tabindex="0" role="button" aria-label="Open full-size image: Close-up of storage units 1 and 2">
+        <img src="Images/6d37c5a5-b5d4-499b-b768-45446fb22341.jpg" alt="Close-up of storage units 1 and 2 with green roll-up doors, tan siding, and security lighting at U.S. 60 West Storage LLC" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Units 1 &amp; 2</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Units 27–32 — some open, showing clean concrete interiors" tabindex="0" role="button" aria-label="Open full-size image: Units 27 through 32">
+        <img src="Images/9f36d53f-3059-47ae-8ead-8d389ef78f62.jpg" alt="A row of storage units 27 through 32 with several open doors revealing clean concrete floors and wood-framed interiors" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Units 27–32</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Side row view — long row of units with security lighting" tabindex="0" role="button" aria-label="Open full-size image: Side view of long storage unit row">
+        <img src="Images/ed89699e-0a3f-4150-bfa9-278d61256a88.jpg" alt="Long side view of a storage unit building showing green roll-up doors, tan metal siding, and a security light on the corner" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Side Row</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Unit 105 exterior — open unit with security light above" tabindex="0" role="button" aria-label="Open full-size image: Unit 105 exterior">
+        <img src="Images/26190d4c-a1fd-41e8-8520-76f272168b84.jpg" alt="Exterior view of storage unit 105 with open roll-up door, security light above, and blue sky in the background" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Unit 105</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="10×10 unit interior — unit 29, clean and ready" tabindex="0" role="button" aria-label="Open full-size image: Interior of a 10x10 unit">
+        <img src="Images/14462901-2e81-4a8f-95c8-ffdd13fd5b38.jpg" alt="Interior of 10x10 storage unit number 29 showing clean concrete floor, metal walls, and wood-framed studs" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">10×10 Interior</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="10×25 unit interior — spacious large unit with concrete floor" tabindex="0" role="button" aria-label="Open full-size image: Interior of a 10x25 large unit">
+        <img src="Images/46f8828f-3995-4340-b741-33da1813eb9a.jpg" alt="Interior of a large 10x25 storage unit showing exposed wood framing, metal walls, and a wide concrete floor" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">10×25 Interior</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Unit 100 interior — clean unit ready for move-in" tabindex="0" role="button" aria-label="Open full-size image: Unit 100 interior">
+        <img src="Images/8290850d-02ee-4fd9-853a-b4f5a327691f.jpg" alt="Interior view of storage unit 100 showing a clean concrete floor and roll-up door partially visible" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Unit 100 Interior</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Interior storage unit — clean metal walls and concrete floor" tabindex="0" role="button" aria-label="Open full-size image: Storage unit interior">
+        <img src="Images/630ea784-edff-4fb7-82c2-2ae3393d8cc0.jpg" alt="Clean interior of a storage unit showing metal corrugated walls and smooth concrete floor at U.S. 60 West Storage LLC" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Unit Interior</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Interior unit view — ready for your belongings" tabindex="0" role="button" aria-label="Open full-size image: Another interior unit view">
+        <img src="Images/fc02c94a-3485-4946-b60e-d0bb044699fc.jpg" alt="Interior view of a storage unit with metal walls and concrete floor, clean and ready for storage" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Unit Interior</span></div>
+      </figure>
+
+      <figure class="gallery-item" onclick="openLightbox(this)" data-caption="Facility exterior — storage unit rows along tree line" tabindex="0" role="button" aria-label="Open full-size image: Facility exterior with treeline">
+        <img src="Images/3135d95d-286b-4be4-8435-38b4c779edbe.jpg" alt="Exterior view of U.S. 60 West Storage LLC storage buildings along a hillside with a tree line in the background" loading="lazy" />
+        <div class="gallery-overlay"><span class="gallery-caption">Facility Exterior</span></div>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image viewer">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="Images/9a304e4a-1f82-4249-8898-9955c3721f24.jpg" alt="Aerial view of U.S. 60 West Storage LLC facility in Ashland, Kentucky showing clean, well-maintained storage buildings" />
+      </div>
+      <div class="about-text">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title" id="about-heading">Locally Owned &amp;<br>Community Focused</h2>
+        <div class="gold-divider"></div>
+        <p>U.S. 60 West Storage LLC provides secure, affordable, and convenient storage solutions in Ashland, Kentucky. We offer both short-term and long-term storage with 24-hour access, camera surveillance, night lighting, and clean storage units.</p>
+        <p>Whether you are moving, downsizing, renovating, storing business inventory, or simply need more space, we are here to help. Our facility is conveniently located on U.S. Route 60 at 822 US-60, making it easy to access from Ashland and the surrounding area.</p>
+        <p>We take pride in keeping our facility clean, secure, and well-maintained so you can store your belongings with confidence.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Access</div>
+          </div>
+          <div class="about-stat">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Unit Sizes</div>
+          </div>
+          <div class="about-stat">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Days a Week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMING SOON
+============================================================ -->
+<section id="coming-soon" aria-labelledby="coming-soon-heading">
+  <div class="container">
+    <div class="coming-soon-card">
+      <div class="coming-soon-badge">Coming Soon</div>
+      <h2 class="coming-soon-title" id="coming-soon-heading">RV &amp; Boat Storage</h2>
+      <p class="coming-soon-desc">Outdoor RV and boat storage is planned to become available at our Ashland, KY facility. Call us for the latest updates on availability.</p>
+      <a href="tel:6062254116" class="btn btn-gold">📞 Call for Updates</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEPOSIT POLICY
+============================================================ -->
+<section id="deposit-policy" aria-labelledby="deposit-heading">
+  <div class="container">
+    <span class="section-label">How It Works</span>
+    <h2 class="section-title" id="deposit-heading">Clean-Out Deposit Policy</h2>
+    <div class="gold-divider"></div>
+    <p class="section-subtitle">Our deposit policy is simple and straightforward. Follow these three steps to receive your deposit back in full.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3 class="step-title">Pay the Deposit</h3>
+        <p class="step-desc">When you rent your unit, pay the refundable clean-out deposit along with your first month's rent. The deposit is $40 for a 10×10 unit and $60 for a 10×25 unit.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3 class="step-title">Stay Current</h3>
+        <p class="step-desc">Keep your account fully paid and current throughout your rental period. Your deposit is held until you are ready to move out.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3 class="step-title">Move Out Clean</h3>
+        <p class="step-desc">When you are done, completely empty your unit and leave it clean. Once we verify the unit is empty and clean and your account is current, your deposit is refunded.</p>
+      </div>
+    </div>
+
+    <div class="deposit-amounts">
+      <div class="deposit-amount">
+        <div>
+          <div class="size">10' × 10' Unit</div>
+          <div class="label">Refundable Deposit</div>
+        </div>
+        <div class="amount">$40</div>
+      </div>
+      <div class="deposit-amount">
+        <div>
+          <div class="size">10' × 25' Unit</div>
+          <div class="label">Refundable Deposit</div>
+        </div>
+        <div class="amount">$60</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAYMENTS
+============================================================ -->
+<section id="payments" aria-labelledby="payments-heading">
+  <div class="container">
+    <span class="section-label">Make a Payment</span>
+    <h2 class="section-title" id="payments-heading">Online Payment Options</h2>
+    <div class="gold-divider"></div>
+    <p class="section-subtitle">Pay your monthly storage rent conveniently online using PayPal or Cash App — no check or in-person trip required.</p>
+
+    <div class="payment-cards">
+      <div class="payment-card">
+        <div class="payment-icon">🅿️</div>
+        <h3 class="payment-name">PayPal</h3>
+        <p class="payment-desc">Send your monthly payment securely through PayPal. Use the link below or search for our account in the PayPal app.</p>
+        <!-- REPLACE href="#paypal-link-here" WITH YOUR ACTUAL PAYPAL.ME LINK -->
+        <a href="#paypal-link-here" class="btn btn-outline" style="width:100%;justify-content:center;">Pay with PayPal</a>
+        <div class="payment-placeholder" style="margin-top:10px;">⚙ Replace with your PayPal.me link</div>
+      </div>
+      <div class="payment-card">
+        <div class="payment-icon">💚</div>
+        <h3 class="payment-name">Cash App</h3>
+        <p class="payment-desc">Send your monthly payment quickly and easily through Cash App. Search for our $CashTag in the Cash App to send your payment.</p>
+        <!-- REPLACE href="#cashapp-link-here" WITH YOUR ACTUAL CASH APP $CASHTAG LINK -->
+        <a href="#cashapp-link-here" class="btn btn-outline" style="width:100%;justify-content:center;">Pay with Cash App</a>
+        <div class="payment-placeholder" style="margin-top:10px;">⚙ Replace with your $CashTag link</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <span class="section-label">Common Questions</span>
+    <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+    <div class="gold-divider"></div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          What storage unit sizes are available?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">We currently offer two unit sizes: a <strong>10' × 10'</strong> unit at $65.00/month and a <strong>10' × 25'</strong> unit at $130.00/month. Both include 24/7 access and are covered by our camera surveillance system.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          How much does a 10' × 10' unit cost?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">The 10' × 10' unit rents for <strong>$65.00 per month</strong>, plus a <strong>$40.00 refundable clean-out deposit</strong> due at move-in.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          How much does a 10' × 25' unit cost?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">The 10' × 25' unit rents for <strong>$130.00 per month</strong>, plus a <strong>$60.00 refundable clean-out deposit</strong> due at move-in.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Is a deposit required?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Yes. A refundable clean-out deposit is required at the time you rent your unit. The deposit is $40 for a 10×10 unit and $60 for a 10×25 unit. This deposit is fully refundable when you meet the move-out requirements.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          When is the clean-out deposit refunded?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Your clean-out deposit is refunded when: (1) your account is fully paid and current, (2) your unit is completely emptied, and (3) the unit is left clean at move-out.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Can I access my unit at night?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Yes! Our facility offers <strong>24/7 access</strong> — you can visit your unit at any hour. The property is well-lit with night lighting to ensure visibility and safety after dark.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Is the property monitored by cameras?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Yes. U.S. 60 West Storage LLC has <strong>24-hour camera surveillance</strong> in place to provide continuous video monitoring of the property for added security and peace of mind.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Do you offer short-term storage?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Yes, we offer flexible short-term storage for renters who need temporary space during a move, renovation, or other short-term situation.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Do you offer long-term storage?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Yes, long-term storage is available for renters who need extended storage for household belongings, business inventory, seasonal items, or other ongoing needs.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          What payment methods do you accept?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">We accept online payments through <strong>PayPal</strong> and <strong>Cash App</strong>. Please call us at <a href="tel:6062254116" style="color:var(--gold);">606-225-4116</a> if you have questions about payment options.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Will RV and boat storage be available?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">Outdoor RV and boat storage is planned to become available at our facility in the future. Call us at <a href="tel:6062254116" style="color:var(--gold);">606-225-4116</a> for the latest updates on when this option will be offered.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          How do I check unit availability?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="faq-answer">The best way to check availability is to call us directly at <a href="tel:6062254116" style="color:var(--gold);">606-225-4116</a>. You can also use the contact form on this page and we will get back to you as soon as possible.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CALL BAR
+============================================================ -->
+<div class="call-bar" aria-label="Call to action">
+  <div class="call-bar-inner container">
+    <p class="call-bar-text">
+      📞 Call <span>606-225-4116</span> Today!
+    </p>
+    <a href="tel:6062254116" class="btn btn-gold">Call Now</a>
+    <p class="call-bar-text" style="font-size:0.9rem;opacity:0.7;">Your Storage. Our Priority.</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title" id="contact-heading">Contact Us</h2>
+    <div class="gold-divider"></div>
+
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-icon" aria-hidden="true">🏢</div>
+          <div>
+            <div class="contact-detail-title">Business Name</div>
+            <div class="contact-detail-value">U.S. 60 West Storage LLC</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="contact-detail-title">Address</div>
+            <div class="contact-detail-value">
+              822 US-60<br>Ashland, KY 41102
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="contact-detail-title">Phone</div>
+            <div class="contact-detail-value"><a href="tel:6062254116">606-225-4116</a></div>
+          </div>
+        </div>
+
+        <div class="contact-action-btns">
+          <a href="tel:6062254116" class="btn btn-gold">📞 Call Now</a>
+          <a href="https://maps.google.com/?q=822+US-60+Ashland+KY+41102" target="_blank" rel="noopener" class="btn btn-outline">📍 Get Directions</a>
+        </div>
+
+        <div class="hours-note">
+          <strong>Availability:</strong> Call <a href="tel:6062254116" style="color:var(--gold);">606-225-4116</a> for current unit availability. The facility is accessible 24 hours a day, 7 days a week.
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-wrap">
+        <iframe
+          title="U.S. 60 West Storage LLC location on Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.0!2d-82.7!3d38.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884a7b4e1e1e1e1f%3A0x0!2s822+US-60%2C+Ashland%2C+KY+41102!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus&q=822+US-60,+Ashland,+KY+41102"
+          width="100%"
+          height="100%"
+          style="border:0;min-height:380px;border-radius:3px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://maps.google.com/?q=822+US-60+Ashland+KY+41102" target="_blank" rel="noopener" class="map-overlay-btn">📍 Open in Google Maps</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-logo">
+        <img src="Images/Header_files/Logo Basic Transparent.png" alt="U.S. 60 West Storage LLC logo" />
+        <div class="footer-tagline">Your Storage. Our Priority.</div>
+        <address class="footer-addr" style="font-style:normal;">
+          822 US-60<br>
+          Ashland, KY 41102<br>
+          <a href="tel:6062254116">606-225-4116</a>
+        </address>
+        <div style="margin-top:16px;">
+          <a href="https://www.facebook.com/profile.php?id=61559502758323" target="_blank" rel="noopener" class="fb-icon-btn footer-fb" aria-label="Visit our Facebook page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.884v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#unit-sizes">Unit Sizes &amp; Pricing</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#calculator">Storage Calculator</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Payments & CTA -->
+      <div>
+        <h4 class="footer-col-title">Payments Accepted</h4>
+        <div class="footer-payment">
+          <p><strong>🅿️ PayPal</strong><br>Pay securely online</p>
+          <p><strong>💚 Cash App</strong><br>Quick mobile payments</p>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="tel:6062254116" class="btn btn-gold" style="width:100%;justify-content:center;">📞 Call Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 U.S. 60 West Storage LLC. All rights reserved. | 822 US-60, Ashland, KY 41102</p>
+      <a href="https://neservicewv.com" target="_blank" rel="noopener" class="ne-credit" aria-label="Website created by N.E. Service">
+        <span class="ne-credit-text">Website Created By</span>
+        <img src="Logo/logo-01-1-transparent.png" alt="N.E. Service logo" class="ne-logo" />
+        <span class="ne-credit-url">neservicewv.com</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+/* ---- Hamburger Menu ---- */
+const hamburger = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+}
+
+/* ---- Active Nav on Scroll ---- */
+const sections = document.querySelectorAll('section[id], div[id="hero"]');
+const navLinks = document.querySelectorAll('#main-nav a');
+
+function updateActiveNav() {
+  let current = '';
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top <= 100) current = sec.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+/* ---- Header shrink on scroll ---- */
+const header = document.getElementById('site-header');
+window.addEventListener('scroll', () => {
+  header.style.background = window.scrollY > 60
+    ? 'rgba(5,5,5,0.99)'
+    : 'rgba(10,10,10,0.97)';
+}, { passive: true });
+
+/* ---- Gallery Lightbox ---- */
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  lightboxImg.src = img.src;
+  lightboxImg.alt = img.alt;
+  lightboxCaption.textContent = el.getAttribute('data-caption') || '';
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (!e || e.target === lightbox || e.currentTarget === document.querySelector('.lightbox-close')) {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
+// Keyboard access for gallery
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(item); }
+  });
+});
+
+/* ---- FAQ Accordion ---- */
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = answer.classList.contains('open');
+
+  // Close all
+  document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+  document.querySelectorAll('.faq-question').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-expanded', 'false'); });
+
+  if (!isOpen) {
+    answer.classList.add('open');
+    btn.classList.add('active');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+/* ---- Storage Calculator ---- */
+const ITEMS = [
+  { label: 'Boxes',          points: 2 },
+  { label: 'Twin Bed',       points: 8 },
+  { label: 'Full/Queen Bed', points: 14 },
+  { label: 'King Bed',       points: 18 },
+  { label: 'Dresser',        points: 10 },
+  { label: 'Sofa',           points: 16 },
+  { label: 'Chair',          points: 6 },
+  { label: 'Dining Table',   points: 12 },
+  { label: 'Television',     points: 5 },
+  { label: 'Refrigerator',   points: 15 },
+  { label: 'Washer/Dryer',   points: 14 },
+  { label: 'Desk',           points: 10 },
+  { label: 'Filing Cabinet', points: 7 },
+  { label: 'Shelving Unit',  points: 8 },
+  { label: 'Outdoor Equip.', points: 12 },
+  { label: 'Business Inventory (Pallets)', points: 20 },
+];
+
+const quantities = {};
+let situationScore = 0;
+
+function buildItemsGrid() {
+  const grid = document.getElementById('items-grid');
+  ITEMS.forEach((item, i) => {
+    quantities[i] = 0;
+    const row = document.createElement('div');
+    row.className = 'item-row';
+    row.innerHTML = `
+      <span class="item-label">${item.label}</span>
+      <div class="item-controls">
+        <button onclick="changeQty(${i},-1)" aria-label="Decrease ${item.label}">−</button>
+        <span class="item-qty" id="qty-${i}">0</span>
+        <button onclick="changeQty(${i},1)" aria-label="Increase ${item.label}">+</button>
+      </div>`;
+    grid.appendChild(row);
+  });
+}
+
+function changeQty(i, delta) {
+  quantities[i] = Math.max(0, (quantities[i] || 0) + delta);
+  document.getElementById('qty-' + i).textContent = quantities[i];
+}
+
+function selectSituation(btn) {
+  document.querySelectorAll('.situation-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  situationScore = parseInt(btn.getAttribute('data-score')) || 0;
+}
+
+function calcRecommend() {
+  let itemScore = 0;
+  ITEMS.forEach((item, i) => { itemScore += (quantities[i] || 0) * item.points; });
+  const total = situationScore + itemScore;
+
+  const result = document.getElementById('calc-result');
+  const sizeEl = document.getElementById('result-size');
+  const priceEl = document.getElementById('result-price');
+  const reasonEl = document.getElementById('result-reason');
+
+  if (total === 0) {
+    sizeEl.textContent = 'Select a situation first';
+    priceEl.textContent = '';
+    reasonEl.textContent = 'Please choose your situation above and add any items you plan to store.';
+    result.classList.add('show');
+    return;
+  }
+
+  if (total <= 60) {
+    sizeEl.textContent = 'Recommended: 10\' × 10\'';
+    priceEl.textContent = '$65.00/month + $40.00 refundable deposit';
+    reasonEl.textContent = 'Based on your selections, a 10×10 unit should comfortably fit your belongings. This unit is ideal for small apartments, boxes, and basic furniture.';
+  } else if (total <= 130) {
+    sizeEl.textContent = 'Recommended: 10\' × 25\'';
+    priceEl.textContent = '$130.00/month + $60.00 refundable deposit';
+    reasonEl.textContent = 'Based on your selections, a 10×25 unit is the better fit. This larger unit handles multiple rooms, big furniture, appliances, and business inventory with room to spare.';
+  } else {
+    sizeEl.textContent = 'Please Call Us';
+    priceEl.textContent = 'Your needs may exceed our 10×25 unit';
+    reasonEl.textContent = 'Based on your selections, you may need more space than our 10×25 unit provides. Please call us at 606-225-4116 to discuss your options and current availability.';
+  }
+
+  result.classList.add('show');
+  result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function resetCalc() {
+  situationScore = 0;
+  ITEMS.forEach((_, i) => { quantities[i] = 0; const el = document.getElementById('qty-' + i); if (el) el.textContent = '0'; });
+  document.querySelectorAll('.situation-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('calc-result').classList.remove('show');
+}
+
+buildItemsGrid();
+
+/* ---- Contact Form ---- */
+function submitContactForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('contact-form');
+  const name = form.querySelector('#name').value.trim();
+  const phone = form.querySelector('#phone').value.trim();
+
+  if (!name) { alert('Please enter your name.'); return; }
+  if (!phone) { alert('Please enter your phone number.'); return; }
+
+  form.style.display = 'none';
+  document.getElementById('form-success').classList.add('show');
+}
+</script>
+
+</body>
+</html>
