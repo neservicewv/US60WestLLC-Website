@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refund Policy | U.S. 60 West Storage LLC</title>
+  <meta name="description" content="Refund Policy for U.S. 60 West Storage LLC, Ashland, KY." />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #c9a227;
+      --gold-light: #e8c04a;
+      --gold-dark:  #a07b10;
+      --black:      #0a0a0a;
+      --charcoal:   #151515;
+      --dark:       #1c1c1c;
+      --dark2:      #222222;
+      --white:      #f5f5f5;
+      --text-muted: #b0b0b0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--charcoal);
+      color: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--black);
+      border-bottom: 2px solid var(--gold);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-logo { height: 60px; width: auto; }
+
+    .header-brand { display: flex; flex-direction: column; }
+
+    .header-brand-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .header-back {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ── PAGE CONTENT ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--gold-dark);
+    }
+
+    .doc-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .doc-company {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .doc-effective {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .doc-effective strong { color: var(--gold-light); }
+
+    .doc-intro {
+      background: var(--dark);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 0.97rem;
+      color: var(--white);
+    }
+
+    .doc-intro p + p { margin-top: 12px; }
+    .doc-intro .disclaimer { font-style: italic; color: var(--text-muted); }
+
+    /* ── SECTIONS ── */
+    .doc-section { margin-bottom: 40px; }
+
+    .doc-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--dark2);
+    }
+
+    .doc-section p {
+      margin-bottom: 12px;
+      color: var(--white);
+      font-size: 0.97rem;
+    }
+
+    .doc-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 14px 0;
+    }
+
+    .doc-section ul li {
+      padding: 5px 0 5px 22px;
+      position: relative;
+      font-size: 0.95rem;
+      color: #d8d8d8;
+    }
+
+    .doc-section ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.8rem;
+      top: 7px;
+    }
+
+    /* ── NOTICE BOX ── */
+    .notice-box {
+      background: var(--dark);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+
+    .notice-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .notice-box p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--dark);
+      border: 1px solid var(--gold-dark);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px !important;
+      font-size: 0.97rem;
+    }
+
+    .contact-box strong { color: var(--gold); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 2px solid var(--gold);
+      padding: 28px 32px;
+      text-align: center;
+    }
+
+    .footer-bottom-strip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-copy { font-size: 0.82rem; color: var(--text-muted); }
+    .footer-copy a { color: var(--gold); }
+
+    .ne-credit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      transition: color 0.2s;
+    }
+
+    .ne-credit:hover { color: var(--gold); text-decoration: none; }
+    .ne-logo { height: 36px; width: auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .page-wrap { padding: 36px 20px 60px; }
+      header { padding: 14px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html">
+    <img src="Images/Header_files/Logo Basic Transparent.png" alt="U.S. 60 West Storage LLC logo" class="header-logo" />
+  </a>
+  <div class="header-brand">
+    <span class="header-brand-name">U.S. 60 West Storage LLC</span>
+    <span class="header-back"><a href="index.html">← Back to Home</a></span>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="page-wrap">
+
+  <div class="doc-header">
+    <div class="doc-title">Refund Policy</div>
+    <div class="doc-company">US 60 West Storage LLC</div>
+    <div class="doc-effective">Effective Date: <strong>August 2, 2026</strong></div>
+  </div>
+
+  <div class="doc-intro">
+    <p>At US 60 West Storage LLC, we strive to provide clear and fair billing practices. This Refund Policy explains how payments, cancellations, and refunds are handled for our self-storage services.</p>
+    <p class="disclaimer">By renting a storage unit, making an online payment, or using our services, you agree to this Refund Policy.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="doc-section">
+    <h2>1. Monthly Rental Payments</h2>
+    <p>All storage rentals are provided on a month-to-month basis.</p>
+    <p>Monthly rent is due in advance according to your Rental Agreement. Payments are applied to the current rental period and are considered earned once the rental period begins.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="doc-section">
+    <h2>2. No Refunds for Early Move-Out</h2>
+    <p>US 60 West Storage LLC does not provide prorated refunds or credits when a customer vacates a storage unit before the end of the current rental period.</p>
+    <p>Once a rental period has begun, the full monthly rent remains due regardless of the move-out date.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="doc-section">
+    <h2>3. Online Payments</h2>
+    <p>Payments made through our website are generally considered final. Please review all payment information carefully before submitting payment.</p>
+    <p>If you believe a payment was made in error, contact us immediately so we can review the transaction.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="doc-section">
+    <h2>4. Duplicate or Incorrect Charges</h2>
+    <p>If you believe you have been:</p>
+    <ul>
+      <li>Charged twice,</li>
+      <li>Charged the incorrect amount, or</li>
+      <li>Experienced a payment processing error,</li>
+    </ul>
+    <p>please notify us as soon as possible. Verified billing errors will be corrected promptly, and any approved refund will be issued using the original payment method whenever possible.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="doc-section">
+    <h2>5. Administrative Fees</h2>
+    <p>Administrative fees, processing fees, and similar non-rental charges are generally non-refundable unless required by law or determined by US 60 West Storage LLC to have been charged in error.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="doc-section">
+    <h2>6. Security Deposits</h2>
+    <p>If a refundable security deposit is required under your Rental Agreement, it will be returned only after:</p>
+    <ul>
+      <li>Your account is paid in full;</li>
+      <li>The storage unit has been completely emptied;</li>
+      <li>The unit has been inspected by management;</li>
+      <li>No damage beyond normal wear is present;</li>
+      <li>All contractual obligations have been satisfied.</li>
+    </ul>
+    <p>Any unpaid rent, fees, damages, cleaning charges, or other amounts owed may be deducted from the deposit as permitted by the Rental Agreement or applicable law.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="doc-section">
+    <h2>7. Reservation Payments</h2>
+    <p>If reservation fees or prepaid move-in payments are offered, any applicable refund eligibility will be disclosed at the time the reservation is made.</p>
+    <p>Unless otherwise stated, reservation payments are non-refundable after a storage unit has been assigned or held for the customer.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="doc-section">
+    <h2>8. Abandoned Property</h2>
+    <p>No refunds or rental credits will be issued for units deemed abandoned or for accounts that become subject to lien enforcement or other remedies available under the Rental Agreement or Kentucky law.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="doc-section">
+    <h2>9. Exceptions</h2>
+    <p>US 60 West Storage LLC reserves the right, at its sole discretion, to issue a full or partial refund in extraordinary circumstances, including:</p>
+    <ul>
+      <li>Billing errors;</li>
+      <li>Duplicate payments;</li>
+      <li>Technical payment processing issues; or</li>
+      <li>Other situations where management determines a refund is appropriate.</li>
+    </ul>
+    <p>The issuance of one refund does not create an obligation to provide refunds under similar circumstances in the future.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="doc-section">
+    <h2>10. Processing Time</h2>
+    <p>Approved refunds are typically processed within 5–10 business days after approval. Actual processing times may vary depending on your financial institution or payment provider.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="doc-section">
+    <h2>11. Chargebacks</h2>
+    <p>Customers are encouraged to contact US 60 West Storage LLC before initiating a chargeback with their bank or credit card issuer.</p>
+    <p>If a chargeback is filed for a valid charge, we reserve the right to provide supporting documentation to the payment processor and pursue any remedies available under the Rental Agreement or applicable law.</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="doc-section">
+    <h2>12. Changes to This Policy</h2>
+    <p>US 60 West Storage LLC reserves the right to modify this Refund Policy at any time. Changes become effective immediately upon posting to our website.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="doc-section">
+    <h2>Contact Us</h2>
+    <p>If you have questions regarding this Refund Policy, please contact us:</p>
+    <div class="contact-box">
+      <p><strong>US 60 West Storage LLC</strong></p>
+      <p>822 U.S. 60 W.<br>Ashland, KY 41102</p>
+      <p>Phone: <a href="tel:6062254116">(606) 225-4116</a></p>
+    </div>
+  </div>
+
+  <!-- Important Notice -->
+  <div class="notice-box">
+    <h3>Important Notice</h3>
+    <p>This Refund Policy is intended to supplement the official Self-Storage Rental Agreement. In the event of any conflict between this Refund Policy and your signed Rental Agreement, the terms of the signed Rental Agreement shall govern.</p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom-strip">
+    <p class="footer-copy">&copy; 2026 U.S. 60 West Storage LLC. All rights reserved. | 822 US 60 W. Ashland KY 41102 | <a href="terms.html">Terms &amp; Conditions</a> | <a href="privacy.html">Privacy Policy</a> | <a href="refund.html">Refund Policy</a></p>
+    <a href="https://neservicewv.com" target="_blank" rel="noopener" class="ne-credit" aria-label="Website created by N.E. Service">
+      <span>Website Created By</span>
+      <img src="Logo/logo-01-1-transparent.png" alt="N.E. Service logo" class="ne-logo" />
+      <span>neservicewv.com</span>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
